@@ -6,7 +6,7 @@ button_calc.addEventListener("click", calcular);
 
 function calcular()
 {
-  if (texto_usuario.value <= 5000000 >= 1000 && texto_plazo.value <= 365 >= 30) 
+  if (texto_usuario.value <= 5000000 && texto_usuario.value >= 1000 && texto_plazo.value <= 365 && texto_plazo.value >= 30) 
   {
     var cap = parseInt(texto_usuario.value);
     var plaz = parseInt(texto_plazo.value);
