@@ -11,7 +11,7 @@ function calcular()
     var plaz = parseInt(texto_plazo.value);
     var resultado_int = parseFloat(plaz * (21 / 365) * cap / 100).toFixed(2);
     console.log(resultado_int);
-    var resultado_tot =  cap + resultado_int / 1;
+    var resultado_tot =  parseFloat(cap + resultado_int / 1).toFixed(2);
     console.log(resultado_tot);
     document.getElementById("result").innerHTML = "Tu ganancia es $" + resultado_int + "<br />" +
                                                  "Total de Capital es de $" + resultado_tot;
