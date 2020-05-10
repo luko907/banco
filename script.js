@@ -6,7 +6,8 @@ button_calc.addEventListener("click", calcular);
 
 function calcular()
 {
-  if (texto_usuario.value <= 5000000 && texto_plazo.value <= 365) {
+  if (texto_usuario.value <= 5000000 >= 1000 && texto_plazo.value <= 365 >= 30) 
+  {
     var cap = parseInt(texto_usuario.value);
     var plaz = parseInt(texto_plazo.value);
     var resultado_int = parseFloat(plaz * (21 / 365) * cap / 100).toFixed(2);
@@ -17,8 +18,10 @@ function calcular()
                                                  "Total de Capital es de $" + resultado_tot;
   }
 
-  else if (texto_usuario.value !== 5000000 && texto_plazo.value !== 365) {
+  else if (texto_usuario.value !== 5000000 && texto_plazo.value !== 365)
+   {
     alert("Porfavor, introduce un número valido");
     location.reload(true);
   }
+   
 }
